@@ -1,0 +1,59 @@
+.clients {
+    padding: 94px 0px;
+
+    &_title {
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: var(--primary-light-txt);
+        text-align: center;
+        margin-bottom: 50px;
+    
+    }
+    
+    &-list {
+        display: flex;
+    }
+    
+    &-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+
+
+
+.client-link {
+    color: #AFB1B8;
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt);
+        border-color: var(--accent-txt);
+    }
+}
+
+
+
+.svg-client {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+

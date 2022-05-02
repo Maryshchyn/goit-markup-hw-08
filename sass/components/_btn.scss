@@ -1,0 +1,20 @@
+.hero-btn {
+    border: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    max-height: 50px;
+    padding: 10px 32px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: var(--primary-dark-txt);
+    background-color: var(--accent-txt);
+    cursor: pointer;
+}
