@@ -1,19 +1,5 @@
 .clients {
     padding: 94px 0px;
-
-    &_title {
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        color: var(--primary-light-txt);
-        text-align: center;
-        margin-bottom: 50px;
-    
-    }
-    
-    &-list {
-        display: flex;
-    }
     
     &-item:not(:last-child) {
         margin-right: 30px;
@@ -22,6 +8,19 @@
     &-item:not(:last-child) {
         margin-right: 30px;
     }
+}
+
+.clients-list {
+    display: flex;
+}
+.clients_title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--primary-light-txt);
+    text-align: center;
+    margin-bottom: 50px;
+
 }
 
 

@@ -1,64 +1,57 @@
-.advice{
-    &_visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
-    &_list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    &_iten:not(:last-child) {
-        margin-right: 30px;
-    }
-    
-    &_div-input {
-        display: flex;
-        width: 270px;
-        height: 120px;
-        background-color: var(--primary-light-bg);
-        border-radius: 4px;
-        margin-bottom: 30px;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    &_input {
-        width: 70px;
-        height: 70px;
-        background-size: 50%;
-    }
-    
-    &_subtitle {
-        width: 270px;
-        height: 16px;
-        margin-bottom: 10px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: var(--primary-light-txt);
-    }
-    
-    &_descr {
-        width: 270px;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: var(--secondary-light-txt);
-    }
 
+.advice_visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.advice_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advice_iten:not(:last-child) {
+    margin-right: 30px;
+}
+.advice_div-input {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--primary-light-bg);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.advice_input {
+    width: 70px;
+    height: 70px;
+    background-size: 50%;
+}
+.advice_subtitle {
+    width: 270px;
+    height: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-light-txt);
+}
+.advice_descr {
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-light-txt);
 }
 
