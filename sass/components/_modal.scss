@@ -25,6 +25,8 @@
 
 
 .modal {
+    width: 450px;
+    
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -85,7 +87,7 @@
     padding-left: 40px;
 
     border: 0;
-    width: 448px;
+    width: 370px;
     height: 40px;
     font-family: inherit;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -96,7 +98,7 @@
 .modal-element_pregunta {
     display: block;
     padding: 12px 16px;
-    width: 448px;
+    width: 370px;
     height: 120px;
 
     &:hover,
@@ -121,7 +123,7 @@
     display: flex;
     position: absolute;
     margin: 0;
-    left: 490px;
+    left: 412px;
     top: 8px;
     width: 30px;
     height: 30px;
@@ -178,6 +180,16 @@
     background-size: contain;
     background-size: contain;
     background-origin: border-box;
+}
+.modal-checkbox_first-span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: #757575;
 }
 .modal-checkbox_span {
     color: var(--accent-txt);

@@ -6,9 +6,16 @@
     letter-spacing: 0.03em;
     color: var(--primary-dark-txt);
     margin-bottom: 20px;
+    text-align: center;
+    
   }
 .footerr-list {
     display: flex;
+    margin-bottom: 60px;
+
+    @media (min-width:768px) {
+        margin-bottom: 0;
+    }
 }
 .footerr-svg {
     display: block;
@@ -16,7 +23,7 @@
     height: 20px;
     background-position: center;
 }
-.footerr-item {
+.footerr{
     border-radius: 50%;
     background-color: var(--background);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,7 +49,12 @@
     }
 }
 .footerr-deskription {
-    margin-left: 70px;
+    margin-left: 130px;
+
+    @media (min-width:768px) {
+        margin-left: 0;
+        margin-right: 89px;
+    }
 }
 
 
@@ -55,16 +67,23 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--primary-dark-bd);
+    
 
 
     
     &-item:not(:last-child) {
-        margin-bottom: 9px;
+        margin-bottom: 10px;
     }
-    
 }
+
 .footer-left {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width:768px) {
+        
+    }
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -77,6 +96,9 @@
 .footer-all {
     margin-top: 20px;
     font-style: normal;
+    display: flex;
+    text-align: center;
+    margin-bottom: 60px;
 }
 .footer-link {
     font-size: 14px;
@@ -99,6 +121,7 @@
 .column {
     align-items: baseline;
     display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -110,8 +133,9 @@
 
 
 .form-input {
-    width: 358px;
+    width: 450px;
     height: 50px;
+    margin-bottom: 20px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -124,18 +148,26 @@
     }
 }
 
-
+// .form{
+//     width: 50px;
+// }
 .form-label {
     width: 448px;
-    height: 40px;
+    height: 50px;
 
     box-sizing: border-box;
     border-radius: 4px;
     margin-right: 12px;
+
+    @media (min-width:768px) {
+        margin-left: 140px;
+    }
 }
 
 .label-wrapper {
-    margin-left: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .label-tutorial {
@@ -167,6 +199,12 @@
     fill: var(--primary-dark-txt);
     color: var(--primary-dark-txt);
     cursor: pointer;
+    margin-left: 140px;
+    justify-content: center;
+
+    @media (min-width:768px) {
+        margin-left: 270px;
+    }
 }
 
 .label-span {

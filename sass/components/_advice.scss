@@ -1,4 +1,7 @@
-
+.advice{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .advice_visually-hidden {
     position: absolute;
     width: 1px;
@@ -13,23 +16,55 @@
 }
 .advice_list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width:768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
 }
-.advice_iten:not(:last-child) {
-    margin-right: 30px;
+.advice_iten{
+    
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width:768px) {
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
+        &:nth-child(odd) {
+        
+            margin-right: 30px;
+        }
+        
+    }
+    
 }
+
+// .advice_iten:not(:last-child) {
+//     margin-right: 30px;
+// }
 .advice_div-input {
     display: flex;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: var(--primary-light-bg);
     border-radius: 4px;
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;
+
+    @media (min-width:768px) {
+        width: 354px;
+        height: 120px;
+    }
 }
 .advice_input {
     width: 70px;
@@ -37,8 +72,8 @@
     background-size: 50%;
 }
 .advice_subtitle {
-    width: 270px;
-    height: 16px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -46,12 +81,23 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-light-txt);
+
+    @media (min-width:768px) {
+        width: 270px;
+        height: 16px;
+        justify-content: flex-start;
+    }
 }
 .advice_descr {
-    width: 270px;
+    
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-light-txt);
+
+    @media (min-width:768px) {
+        width: 354px;
+        height: 75px;
+    }
 }
 
