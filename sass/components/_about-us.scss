@@ -53,6 +53,14 @@
         }
     
     }
+    @media (min-width:1200px) {
+        width: 270px;
+        height: 428px;
+        &:nth-child(2) {
+            margin-right: 30px;
+        }
+    
+    }
 }
 .about-us-div {
     padding-top: 30px;

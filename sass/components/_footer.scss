@@ -75,14 +75,17 @@
         margin-bottom: 10px;
     }
 }
+.footer-list{
+    text-align: center;
+}
 
 .footer-left {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (min-width:768px) {
-        
+    @media (min-width:1200px) {
+        margin-right: 70px;
     }
 }
 .footer-logo {
@@ -122,6 +125,11 @@
     align-items: baseline;
     display: flex;
     flex-wrap: wrap;
+
+    @media (min-width:1200px) {
+        flex-wrap: nowrap;
+        margin-top: 60px;
+    }
 }
 
 
@@ -142,15 +150,19 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
    
-    & {
     
-        color: var(--primary-dark-txt);
+    @media (min-width:1200px) {
+        width: 358px;
+        height: 50px;
     }
 }
 
-// .form{
-//     width: 50px;
-// }
+.form{
+    @media (min-width:1200px) {
+        display: flex;
+        
+    }
+}
 .form-label {
     width: 448px;
     height: 50px;
@@ -162,12 +174,22 @@
     @media (min-width:768px) {
         margin-left: 140px;
     }
+    @media (min-width:1200px) {
+        margin-left: 0;
+        width: 358px;
+    }
 }
 
 .label-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media (min-width:1200px) {
+        margin-left: 93px;
+    }
+}
+.web{
+    color: #2196F3;
 }
 
 .label-tutorial {
@@ -179,6 +201,9 @@
     color: var(--primary-dark-txt);
     margin-bottom: 20px;
 
+    @media (min-width:1200px) {
+        margin-right: 340px;
+    }
 }
 .label-button {
     text-decoration: none;
@@ -204,6 +229,9 @@
 
     @media (min-width:768px) {
         margin-left: 270px;
+    }
+    @media (min-width:1200px) {
+        margin-left: 0;
     }
 }
 

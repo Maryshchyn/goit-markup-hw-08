@@ -27,6 +27,9 @@
         flex-wrap: wrap;
         align-items: flex-start;
     }
+    @media (min-width:1200px) {
+        margin-top: 93px;
+    }
 }
 .advice_iten{
     
@@ -41,6 +44,11 @@
         }
         &:nth-child(odd) {
         
+            margin-right: 30px;
+        }
+    }
+    @media (min-width:1200px) {
+        &:nth-child(2) {
             margin-right: 30px;
         }
         
@@ -63,6 +71,10 @@
 
     @media (min-width:768px) {
         width: 354px;
+        height: 120px;
+    }
+    @media (min-width:1200px) {
+        width: 270px;
         height: 120px;
     }
 }
@@ -98,6 +110,13 @@
     @media (min-width:768px) {
         width: 354px;
         height: 75px;
+    }
+    @media (min-width:1200px) {
+        width: 270px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--secondary-light-txt);
     }
 }
 

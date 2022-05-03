@@ -29,10 +29,11 @@
 .clients-list {
     display: flex;
     flex-wrap: wrap;
-    
-    
-    
-}
+
+    @media (min-width:1200px) {
+        flex-wrap: nowrap;
+    }
+    }
 .clients-item {
     display: flex;
     justify-content: center;
@@ -103,6 +104,10 @@
     }
     @media (min-width:768px) {
         width: 226px;
+        height: 92px;
+    }
+    @media (min-width:1200px) {
+        width: 170px;
         height: 92px;
     }
     

@@ -7,6 +7,11 @@
         padding-top: 21px;
         padding-bottom: 21px;
     }
+    @media (min-width:1200px) {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
 }
 
 .header_container {
@@ -43,6 +48,19 @@
 
     @media (min-width:768px) {
         margin-right: 88px;
+    }
+    @media (min-width:1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        font-family: "Raleway",
+        sans-serif;
+        font-weight: 600;
+        Font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--primary-light-txt);
+        align-items: center;
+        margin-right: 93px;
     }
         
 }

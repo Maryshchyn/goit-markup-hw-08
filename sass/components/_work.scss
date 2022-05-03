@@ -52,3 +52,9 @@
     color: var(--primary-dark-txt);
     background: rgba(47, 48, 58, 0.8);
 }
+.work-image{
+    @media (min-width:1200px) {
+        width: 370px;
+        height: 294px;
+    }
+}
