@@ -68,15 +68,16 @@
     padding-bottom: 60px;
     background-color: var(--primary-dark-bd);
     
-
-
-    
     &-item:not(:last-child) {
         margin-bottom: 10px;
     }
+    
 }
 .footer-list{
     text-align: center;
+    @media (min-width:1200px) {
+        text-align: left;
+    }
 }
 
 .footer-left {
@@ -96,6 +97,10 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--primary-dark-txt);
+    @media (min-width:1200px) {
+        
+        margin-left: -30px;
+    }
 }
 .footer-all {
     margin-top: 20px;

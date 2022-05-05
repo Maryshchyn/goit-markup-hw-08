@@ -654,6 +654,12 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .nav {
+    margin-left: 215px;
+  }
+}
+
 .nav-logo {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -734,6 +740,12 @@ img {
 @media (min-width: 767px) {
   .contact {
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    margin-right: 215px;
   }
 }
 
@@ -1468,6 +1480,12 @@ img {
   text-align: center;
 }
 
+@media (min-width: 1200px) {
+  .footer-list {
+    text-align: left;
+  }
+}
+
 .footer-left {
   flex-grow: 1;
   display: flex;
@@ -1489,6 +1507,12 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-dark-txt);
+}
+
+@media (min-width: 1200px) {
+  .footer-logo {
+    margin-left: -30px;
+  }
 }
 
 .footer-all {
