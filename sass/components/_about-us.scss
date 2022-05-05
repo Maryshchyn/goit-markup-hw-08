@@ -20,6 +20,9 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    @media (min-width:1200px) {
+        justify-content: center;
+    }
     
 }
 // .about-us-item:not(:last-child) {

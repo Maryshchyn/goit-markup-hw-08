@@ -90,6 +90,9 @@
     line-height: 14px;
     letter-spacing: 0.01em;
     color: var(--secondary-light-txt);
+    @media (min-width:1200px) {
+        width: 40px;
+    }
 
 }
 .modal-element_hover {

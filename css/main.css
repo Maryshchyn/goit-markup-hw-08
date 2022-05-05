@@ -303,20 +303,20 @@ img {
 }
 
 .container {
-  width: 480px;
+  max-width: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -416,6 +416,12 @@ img {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: var(--secondary-light-txt);
+}
+
+@media (min-width: 1200px) {
+  .modal-element_span {
+    width: 40px;
+  }
 }
 
 .modal-element_hover {
@@ -651,7 +657,7 @@ img {
 .nav-logo {
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 170px;
+  margin-right: 284px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -1073,6 +1079,7 @@ img {
 
 .work-list {
   display: flex;
+  justify-content: center;
 }
 
 .work-item {
@@ -1135,6 +1142,12 @@ img {
   .about-us-list {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us-list {
+    justify-content: center;
   }
 }
 
@@ -1264,6 +1277,16 @@ img {
   margin-right: 30px;
 }
 
+@media (min-width: 1200px) {
+  .clients__title {
+    margin-left: 640px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1200px;
+    margin-bottom: 50px;
+  }
+}
+
 .clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -1271,7 +1294,11 @@ img {
 
 @media (min-width: 1200px) {
   .clients-list {
+    display: flex;
+    margin-right: 0;
     flex-wrap: nowrap;
+    width: 1200px;
+    margin-left: 190px;
   }
 }
 
@@ -1291,6 +1318,12 @@ img {
   }
 }
 
+@media (max-width: 767px) and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+  }
+}
+
 @media (min-width: 768px) {
   .clients-item:nth-child(-n+3) {
     width: 33.333%;
@@ -1298,6 +1331,12 @@ img {
   }
   .clients-item:nth-child(-n+6) {
     width: 33.333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-item {
+    margin-bottom: 0;
   }
 }
 
@@ -1439,6 +1478,7 @@ img {
 @media (min-width: 1200px) {
   .footer-left {
     margin-right: 70px;
+    margin-left: 215px;
   }
 }
 
@@ -1457,6 +1497,13 @@ img {
   display: flex;
   text-align: center;
   margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .footer-all {
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .footer-link {
@@ -1489,7 +1536,6 @@ img {
 @media (min-width: 1200px) {
   .column {
     flex-wrap: nowrap;
-    margin-top: 60px;
   }
 }
 
@@ -1546,7 +1592,7 @@ img {
 
 @media (min-width: 1200px) {
   .label-wrapper {
-    margin-left: 93px;
+    margin-left: -125px;
   }
 }
 
