@@ -288,18 +288,33 @@ img {
 }
 
 .socials__link {
+  display: flex;
   list-style: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196F3;
-  margin-right: 20px;
+}
+
+.socials__link {
+  display: block;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .socials__item {
   list-style: none;
   display: flex;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__item:last-child .socials__link {
+  padding: 0;
+  border: none;
 }
 
 .container {
