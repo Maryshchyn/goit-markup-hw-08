@@ -8,6 +8,12 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--primary-light-txt);
+    text-align: center;
+    margin-bottom: 50px;
     
     
     text-align: center;
@@ -24,7 +30,7 @@
         margin-right: 30px;
     }
     @media (min-width:1200px) {
-        margin-left: 640px;
+        justify-content: center;
         display: flex;
         flex-wrap: nowrap;
         width: 1200px;
@@ -40,10 +46,10 @@
 
     @media (min-width:1200px) {
         display: flex;
-        margin-right: 0;
+        
         flex-wrap: nowrap;
         width: 1200px;
-        margin-left: 190px;
+        
     }
     }
 .clients-item {
@@ -87,15 +93,10 @@
     }
 }
 
-.clients_title{
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--primary-light-txt);
-    text-align: center;
-    margin-bottom: 50px;
+// .clients_title{
     
-}
+    
+// }
 
 
 

@@ -86,8 +86,12 @@
     flex-direction: column;
     align-items: center;
     @media (min-width:1200px) {
-        margin-right: 70px;
-        margin-left: 215px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+       max-width: 231px;
+       margin-right: 70px;
+        
     }
 }
 .footer-logo {
@@ -98,8 +102,8 @@
     letter-spacing: 0.03em;
     color: var(--primary-dark-txt);
     @media (min-width:1200px) {
+        margin-left: -80px;
         
-        margin-left: -30px;
     }
 }
 .footer-all {
@@ -110,8 +114,15 @@
     margin-bottom: 60px;
 
     @media (min-width:1200px) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        
+        color: #FFFFFF;
         margin-bottom: 0;
         text-align: left;
+        width: 231px;
     }
 }
 .footer-link {
@@ -196,7 +207,7 @@
     flex-wrap: wrap;
     justify-content: center;
     @media (min-width:1200px) {
-        margin-left: -125px;
+        
     }
 }
 .web{

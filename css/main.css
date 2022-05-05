@@ -303,20 +303,20 @@ img {
 }
 
 .container {
-  max-width: auto;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1600px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -1276,6 +1276,12 @@ img {
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primary-light-txt);
+  text-align: center;
+  margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1291,7 +1297,7 @@ img {
 
 @media (min-width: 1200px) {
   .clients__title {
-    margin-left: 640px;
+    justify-content: center;
     display: flex;
     flex-wrap: nowrap;
     width: 1200px;
@@ -1307,10 +1313,8 @@ img {
 @media (min-width: 1200px) {
   .clients-list {
     display: flex;
-    margin-right: 0;
     flex-wrap: nowrap;
     width: 1200px;
-    margin-left: 190px;
   }
 }
 
@@ -1350,15 +1354,6 @@ img {
   .clients-item {
     margin-bottom: 0;
   }
-}
-
-.clients_title {
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--primary-light-txt);
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .client-link {
@@ -1495,8 +1490,11 @@ img {
 
 @media (min-width: 1200px) {
   .footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-width: 231px;
     margin-right: 70px;
-    margin-left: 215px;
   }
 }
 
@@ -1511,7 +1509,7 @@ img {
 
 @media (min-width: 1200px) {
   .footer-logo {
-    margin-left: -30px;
+    margin-left: -80px;
   }
 }
 
@@ -1525,8 +1523,14 @@ img {
 
 @media (min-width: 1200px) {
   .footer-all {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
     margin-bottom: 0;
     text-align: left;
+    width: 231px;
   }
 }
 
@@ -1612,12 +1616,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-@media (min-width: 1200px) {
-  .label-wrapper {
-    margin-left: -125px;
-  }
 }
 
 .web {
