@@ -24,8 +24,8 @@
     background-position: center;
 }
 .footerr{
-    border-radius: 50%;
-    background-color: var(--background);
+    
+    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &-item:not(:last-child) {

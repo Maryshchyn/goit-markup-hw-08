@@ -32,14 +32,15 @@
     @media (min-width:768px) {
         margin-right: 80px;
     }
-    @media (min-width:1200px) {
-        margin-left: 215px;
-    }
+    // @media (min-width:1200px) {
+        
+    // }
     
 
 }
 .nav-logo {
-    
+    font-family: 'Raleway';
+    font-style: normal;
     padding-top: 16px;
     padding-bottom: 16px;
     margin-right: 284px;
@@ -119,9 +120,9 @@
         flex-wrap: wrap;
         
     }
-    @media (min-width:1200px) {
-        margin-right: 215px;
-    }
+    // @media (min-width:1200px) {
+        
+    // }
 
 
 }

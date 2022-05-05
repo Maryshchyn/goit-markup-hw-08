@@ -61,7 +61,7 @@
 // }
 .advice_div-input {
     display: flex;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background-color: var(--primary-light-bg);
     border-radius: 4px;
@@ -70,11 +70,11 @@
     justify-content: center;
 
     @media (min-width:768px) {
-        width: 354px;
+        max-width: 354px;
         height: 120px;
     }
     @media (min-width:1200px) {
-        width: 270px;
+        max-width: 270px;
         height: 120px;
     }
 }
