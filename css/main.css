@@ -183,14 +183,12 @@ img {
 .menu-btn {
   position: relative;
   display: block;
-  width: 44px;
-  height: 44px;
   background-color: transparent;
   border: transparent;
   outline: transparent;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 99;
 }
 
 @media (min-width: 768px) {
@@ -654,6 +652,7 @@ img {
 
 @media (max-width: 767px) {
   .header_container {
+    display: block;
     justify-content: space-between;
   }
 }
@@ -674,7 +673,7 @@ img {
   font-style: normal;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: 284px;
+  margin-right: auto;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
