@@ -33,14 +33,16 @@
 }
 .advice_iten{
     
-    margin-bottom: 30px;
+    
     &:last-child {
         margin-bottom: 0;
     }
 
     @media (min-width:768px) {
+        flex-basis: 47%;
         &:nth-child(-n+2) {
             margin-bottom: 30px;
+            
         }
         &:nth-child(odd) {
         
@@ -108,8 +110,7 @@
     color: var(--secondary-light-txt);
 
     @media (min-width:768px) {
-        width: 354px;
-        height: 75px;
+        
     }
     @media (min-width:1200px) {
         width: 270px;

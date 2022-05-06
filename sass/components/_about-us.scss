@@ -4,14 +4,14 @@
     
 }
 .about-us-title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--primary-light-txt);
 }
 .about-us-container {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .about-us-list {
     display: flex;
@@ -31,13 +31,11 @@
 .about-us-item {
     background-color: var(--primary-dark-txt);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    width: 450px;
-    height: 622px;
+    
     margin-bottom: 30px;
 
     @media (min-width:768px) {
-        width: 354px;
-        height: 536px;
+        margin-bottom: 0;
     }
     margin-bottom: 30px;
     
@@ -97,8 +95,7 @@
 
 
 .social-item {
-    width: 44px;
-    height: 44px;
+    
     list-style: none;
 
     &:not(:last-child) {

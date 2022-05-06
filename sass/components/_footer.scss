@@ -10,8 +10,9 @@
     
   }
 .footerr-list {
+    justify-content: center;
     display: flex;
-    margin-bottom: 60px;
+    
 
     @media (min-width:768px) {
         margin-bottom: 0;
@@ -49,11 +50,10 @@
     }
 }
 .footerr-deskription {
-    margin-left: 130px;
+    margin-bottom: 60px;
 
     @media (min-width:768px) {
-        margin-left: 0;
-        margin-right: 89px;
+        
     }
 }
 
@@ -81,10 +81,11 @@
 }
 
 .footer-left {
-    flex-grow: 1;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
     @media (min-width:1200px) {
         display: flex;
         flex-wrap: wrap;
@@ -111,7 +112,7 @@
     font-style: normal;
     display: flex;
     text-align: center;
-    margin-bottom: 60px;
+    
 
     @media (min-width:1200px) {
         font-weight: 400;
@@ -144,9 +145,8 @@
     color: rgba(255, 255, 255, 0.6);
 }
 .column {
-    align-items: baseline;
-    display: flex;
-    flex-wrap: wrap;
+    
+    
 
     @media (min-width:1200px) {
         flex-wrap: nowrap;
@@ -163,7 +163,7 @@
 
 
 .form-input {
-    width: 450px;
+    width: 100%;
     height: 50px;
     margin-bottom: 20px;
     background-color: transparent;
@@ -180,6 +180,14 @@
 }
 
 .form{
+    width: 100%;
+    text-align: center;
+
+    @media (min-width:768px) {
+    width: auto;
+    text-align: left;
+    
+    }
     @media (min-width:1200px) {
         display: flex;
         
@@ -194,7 +202,7 @@
     margin-right: 12px;
 
     @media (min-width:768px) {
-        margin-left: 140px;
+        
     }
     @media (min-width:1200px) {
         margin-left: 0;
@@ -228,6 +236,8 @@
     }
 }
 .label-button {
+    
+    
     text-decoration: none;
     display: inline-flex;
     padding: 0;
@@ -246,8 +256,8 @@
     fill: var(--primary-dark-txt);
     color: var(--primary-dark-txt);
     cursor: pointer;
-    margin-left: 140px;
-    justify-content: center;
+    
+    
 
     @media (min-width:768px) {
         margin-left: 270px;
