@@ -104,28 +104,28 @@
     
     align-items: center;
     margin-left: auto;
-    &_item {
-        
+   }
+    .contact_item {
+        margin-bottom: 10px;
         display: flex;
         align-items: center;
+
+        
+    
+    
+    &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
     }
     
-    &_item:last-child {
-        margin-right: 0;
-    }
-
     @media (max-width:767px) {
         display: none;
     }
+    
     @media (min-width:767px) {
         flex-wrap: wrap;
-        
+    
     }
-    // @media (min-width:1200px) {
-        
-    // }
-
-
 }
 
 
