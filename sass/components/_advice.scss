@@ -1,6 +1,11 @@
 .advice{
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .advice_visually-hidden {
     position: absolute;
@@ -29,7 +34,7 @@
        flex-direction: row;
     }
     @media (min-width:1200px) {
-        margin-top: 93px;
+        flex-wrap: nowrap;
     }
 }
 .advice_iten{

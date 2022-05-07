@@ -6,8 +6,7 @@
        
    }
     @media (min-width:1200px) {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        
     }
     
 }
@@ -104,8 +103,13 @@
     
     align-items: center;
     margin-left: auto;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        
+    }
    }
-    .contact_item {
+.contact_item {
         margin-bottom: 10px;
         display: flex;
         align-items: center;
@@ -120,12 +124,15 @@
     
     @media (max-width:767px) {
         display: none;
-    }
-    
-    @media (min-width:767px) {
         flex-wrap: wrap;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0;
+        margin-right: 30px;
     
     }
+    
+    
 }
 
 
@@ -166,6 +173,9 @@
 
     @media screen and (min-width:768px) {
         bottom: -22px;
+    }
+    @media screen and (min-width:1200px) {
+        bottom: -28px;
     }
 }
 

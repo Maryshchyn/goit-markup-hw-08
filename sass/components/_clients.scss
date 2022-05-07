@@ -1,6 +1,11 @@
 .clients{
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     
 }
 .clients__title {
@@ -32,8 +37,12 @@
         justify-content: center;
         display: flex;
         flex-wrap: nowrap;
-        width: 1200px;
-        margin-bottom: 50px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 70px;
         
     }
 }
@@ -54,18 +63,21 @@
     }
     }
 .clients-item {
-        margin: 15px;
-        width: calc((100% - 2 * 30px) / 2);
+     margin: 15px;
+     width: calc((100% - 2 * 30px) / 2);
 
-        @media screen and (min-width:768px) {
-        width: calc((100% - 3 * 30px) / 3);
-        }
+     @media screen and (min-width:768px) {
+     width: calc((100% - 3 * 30px) / 3);
+    }
         
-        
-        
-    
     @media (min-width:1200px) {
-        margin-bottom: 0;
+        margin-right: 30px;
+        margin-left: 0;
+        max-width: 170px;
+        margin: 0 30px 0 0;
+        &:last-child{
+            margin-right: 0;
+        }
     }
 }
 .client-link {
