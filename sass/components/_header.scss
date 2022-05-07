@@ -2,9 +2,9 @@
     
     border-bottom: 1px solid #ECECEC;
 
-    // @media (min-width:460px) {
-        
-    // }
+   @media screen and (min-width:768px) {
+       
+   }
     @media (min-width:1200px) {
         padding-top: 24px;
         padding-bottom: 24px;
@@ -101,7 +101,7 @@
 
 
 .contact{
-    display: flex;
+    
     align-items: center;
     margin-left: auto;
     &_item {
@@ -163,6 +163,10 @@
     height: 4px;
     background: var(--accent-txt);
     border-radius: 2px;
+
+    @media screen and (min-width:768px) {
+        bottom: -22px;
+    }
 }
 
 .nav_link {
@@ -215,7 +219,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-light-txt);
