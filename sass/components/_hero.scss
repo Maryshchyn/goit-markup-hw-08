@@ -19,17 +19,23 @@
 }
 
 .hero-title {
-width: 60%;
-font-weight: 900;
-font-size: 26px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    margin-bottom: 30px;
+    max-width: 360px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 @media (min-width:1200px) {
+    max-width: 696px;
     font-family: 'Roboto';
     font-style: normal;
     margin-left: auto;
