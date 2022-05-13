@@ -50,7 +50,7 @@
     }
 }
 .footerr-deskription {
-    margin-bottom: 60px;
+    
 
     @media (min-width:1200px) {
         margin-bottom: 0;
@@ -58,6 +58,7 @@
 }
 
 .conteiner__first{
+    margin-bottom: 60px;
     @media screen and (min-width:768px) {
         display: flex;
         justify-content: space-around;
@@ -96,6 +97,11 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+        
+    }
     @media (min-width:1200px) {
         display: flex;
         flex-wrap: wrap;

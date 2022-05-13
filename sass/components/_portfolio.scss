@@ -132,19 +132,25 @@
         
     }
     @media (min-width:1200px) {
-        margin-bottom: 0;
+        justify-content: center;
     }
     
 }
 .projekts-item {
     list-style: none;
     box-sizing: border-box;
-    border: 1px solid #EEEEEE;
+    
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
     
     @media (min-width:768px) {
         flex-basis: 354px;
         width: calc((100% - 2 * 15px) / 2);
         margin: 15px;
+        &{
+            margin-bottom: 30px;
+        }
         
     }
     
@@ -242,6 +248,7 @@
     border-left: 0;
     border-bottom: 0;
     border-right: 0;
+    border: 1px solid #EEEEEE;
 }
 
 .projekts-subtitle {

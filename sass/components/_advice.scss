@@ -38,11 +38,18 @@
     }
 }
 .advice_iten{
+    flex-basis: 270px;
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
     @media (min-width:768px) {
         flex-basis: 354px;
         
         margin: 15px;
         width: calc((100% - 2 * 30px) / 2);
+        &:nth-child(4) {
+                margin-bottom: 30px;
+            }
         
     }
     
