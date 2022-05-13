@@ -27,11 +27,14 @@
     display: flex;
     flex-direction: column;
     @media (min-width:768px) {
-        flex-direction: row;
+        margin: -15px;
+        display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
     @media (min-width:1200px) {
-        justify-content: center;
+        
+        flex-wrap: nowrap;
     }
     
 }
@@ -45,36 +48,10 @@
     margin-bottom: 30px;
 
     @media (min-width:768px) {
-        margin-bottom: 0;
-    }
-    margin-bottom: 30px;
-    
-    &:last-child {
-        margin-bottom: 0;
+        margin: 15px;
+        width: calc((100% - 2 * 30px) / 2);
     }
     
-    @media (min-width:768px) {
-        &:nth-child(-n+2) {
-            margin-bottom: 30px;
-        }
-    
-        &:nth-child(odd) {
-    
-            margin-right: 30px;
-        }
-    
-    }
-    @media (min-width:1200px) {
-        width: 270px;
-        height: 428px;
-        &:nth-child(2) {
-            margin-right: 30px;
-        }
-        &:nth-child(-n+2) {
-            margin-bottom: 0;
-        }
-    
-    }
 }
 .about-us-div {
     padding-top: 30px;
