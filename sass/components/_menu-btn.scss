@@ -1,4 +1,4 @@
-.menu-open-btn{
+.menu-btn{
     position: relative;
     display: block;
     
@@ -12,10 +12,13 @@
     @media (min-width:768px) {
         display: none;
     }
-
-    
-
-   
+}
+.menu-btn-close{
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    margin-right: 0;
 }
 .menu-btn_icon-open{
     opacity: 1;
