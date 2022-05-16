@@ -1,39 +1,39 @@
-.menu-btn{
-    position: relative;
-    display: block;
+// .menu-btn{
+//     position: relative;
+//     display: block;
     
-    background-color: transparent;
-    border: transparent;
-    outline: transparent;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
+//     background-color: transparent;
+//     border: transparent;
+//     outline: transparent;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 99;
 
-    @media (min-width:768px) {
-        display: none;
-    }
-}
-.menu-btn-close{
-    display: block;
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
-    margin-right: 0;
-}
-.menu-btn_icon-open{
-    opacity: 1;
+//     @media (min-width:768px) {
+//         display: none;
+//     }
+// }
+// .menu-btn-close{
+//     display: block;
+//     background-color: transparent;
+//     border: none;
+//     margin-left: auto;
+//     margin-right: 0;
+// }
+// .menu-btn_icon-open{
+//     opacity: 1;
     
-}
-.menu-btn_icon-close{
-    opacity: 0;
+// }
+// .menu-btn_icon-close{
+//     opacity: 0;
     
-}
+// }
 
-.menu-btn.is-active .menu-btn_icon-open {
-    opacity: 0;
+// .menu-btn.is-active .menu-btn_icon-open {
+//     opacity: 0;
     
-}
+// }
 
-.menu-btn.is-active .menu-btn_icon-close {
-    opacity: 1;
-}
+// .menu-btn.is-active .menu-btn_icon-close {
+//     opacity: 1;
+// }

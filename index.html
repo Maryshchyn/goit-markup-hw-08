@@ -17,24 +17,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
 
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     
 </head>
 
-<body>
+<body class="body">
 
     <!-- header -->
     <header class="header">
         <div class=" header_container container ">
         <nav class="nav">
             <a class="nav-logo link" href="./index.html"><span class="nav_web">Web</span>Studio</a>
-            <button class="menu-btn" type="button" aria-label="Кнопка відкриття" aria-expanded="false" data-menu-button>
-                <svg class="menu-btn_icon" width="40px" height="40px">
-                <use class="menu-btn_icon-open" href="./images/icons.svg/icons.menu/symbol-defs.svg#menu_40px"></use>
-                
-                </svg>
-                
-                </button>
+            <button class="menu-btn-open" type="button" aria-label="Кнопка відкриття" aria-expanded="false" data-menu-button>
+                <svg class="open-icon" width="40px" height="40px">
+                <use class="menu-btn_icon-open" href="./images/icons.svg/icons.menu/symbol-defs.svg#menu_40px"></use></svg>
+            </button>
+           
+            
                 
             <ul class="nav-logo_list list">
                 <li class="nav-logo_iten"> 
@@ -57,7 +56,56 @@
                 </svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
-        
+        <!-- Мобільне меню -->
+        <div class="mobile-menu is-hidden">
+            
+            <div class="container">
+                <div class="mobile-menu_top">
+            <button class="menu-btn-close" type="button" aria-label="Кнопка закриття" aria-expanded="false" >
+                <svg class="close-icon" width="40px" height="40px">
+                    <use class="menu-btn-close" href="./images/icons.svg/icons.menu/symbol-defs.svg#close_40px"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu_list list">
+                <li class="mobile-menu_logo">
+                    <a class="mobile-menu_link link " href="">Студия</a>
+                </li>
+                <li class="mobile-menu_logo">
+                    <a class="mobile-menu_link link " href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu_logo">
+                    <a class="mobile-menu_link link " href="">Контакты</a>
+                </li>
+            </ul>
+            </div>
+            <div class="menu-mobile_bottom">
+            <ul class="mobile-menu_contact list">
+                <li class="mobile-menu_contact-item">
+                    <a class="mobile-menu_contakts-link link " href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-menu_contact-item ">
+                    <a class="mobile-menu_contakts-mail link " href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+               
+            </ul>
+            <ul class="mobile-menu__socials">
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a class="mobile-menu__socials-link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </div>
     </header>
     <!-- Menu -->
     
@@ -486,7 +534,8 @@
     </footer>
     
     <!-- Мобільне меню -->
-    <div class="mobile-overley container" data-menu>
+
+    <!-- <div class="mobile-overley " data-menu>
     <div class="mobile-menu">
         <div class="qwe">
          <div class="mobile-nav">
@@ -518,7 +567,7 @@
         </div>
         </div>
     </div>
-    </div>
+    </div> -->
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>

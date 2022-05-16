@@ -145,84 +145,52 @@ img {
   cursor: pointer;
 }
 
-.menu-btn {
-  position: relative;
-  display: block;
+.menu-btn-open,
+.menu-btn-close {
   background-color: transparent;
-  border: transparent;
-  outline: transparent;
-  justify-content: center;
-  align-items: center;
-  z-index: 99;
+  border: none;
+  display: block;
+  margin-left: auto;
 }
 
-@media (min-width: 768px) {
-  .menu-btn {
+@media screen and (min-width: 768px) {
+  .menu-btn-open,
+  .menu-btn-close {
     display: none;
   }
 }
 
 .menu-btn-close {
-  display: block;
-  background-color: transparent;
-  border: none;
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.menu-btn_icon-open {
-  opacity: 1;
-}
-
-.menu-btn_icon-close {
-  opacity: 0;
-}
-
-.menu-btn.is-active .menu-btn_icon-open {
-  opacity: 0;
-}
-
-.menu-btn.is-active .menu-btn_icon-close {
-  opacity: 1;
-}
-
-.mobile-overley {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 10;
-  transform: translate(100%);
-  visibility: hidden;
-  pointer-events: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-overley.is-open {
-  transform: translate(0);
-  visibility: visible;
-  pointer-events: initial;
+  margin-bottom: 8px;
 }
 
 .mobile-menu {
-  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: #ffff;
   height: 100vh;
-  background-color: #FFFFFF;
-  padding-left: 40px;
+  width: 100vw;
   padding-top: 21px;
-  padding-bottom: 48px;
-  padding-right: 25px;
+  padding-bottom: 21px;
+  padding-left: 40px;
+  z-index: 3;
 }
 
-.mobile-menu .qwe {
+.mobile-menu .container {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  overflow: auto;
 }
 
-.mobile-nav__link {
+.mobile-menu_logo {
+  margin-bottom: 30px;
+}
+
+.mobile-menu_link {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -230,66 +198,72 @@ img {
   color: #212121;
 }
 
-.mobile-nav__item {
-  margin-bottom: 32px;
+.mobile-menu_link:hover {
+  color: #2196F3;
 }
 
-.mobile-menu__contakts {
-  display: flex;
-  flex-direction: column;
-}
-
-.mobile-contakts__tell {
+.mobile-menu_contakts-link {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
-  margin-bottom: 32px;
+  /* identical to box height */
   letter-spacing: 0.02em;
   color: #2196F3;
 }
 
-.mobile-contakts__mail {
+.mobile-menu_contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu_contact {
+  margin-bottom: 64px;
+}
+
+.mobile-menu_contakts-mail {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
-  margin-bottom: 64px;
   color: #757575;
 }
 
-.socials {
+.mobile-menu__socials {
   display: flex;
 }
 
-.socials__link {
+.mobile-menu__socials-item {
+  list-style: none;
+  display: flex;
+}
+
+.mobile-menu__socials-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.mobile-menu__socials-item:last-child .mobile-menu__socials-link {
+  padding: 0;
+  border: none;
+}
+
+.mobile-menu__socials-link {
   display: flex;
   list-style: none;
   font-weight: 500;
-  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
+  font-size: 18px;
 }
 
-.socials__link {
+.mobile-menu__socials-link {
   display: block;
-  padding-right: 10px;
+  padding-right: 5px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.socials__item {
-  list-style: none;
-  display: flex;
-}
-
-.socials__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.socials__item:last-child .socials__link {
-  padding: 0;
-  border: none;
 }
 
 .container {
@@ -636,7 +610,6 @@ img {
   font-style: normal;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-right: auto;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -689,9 +662,14 @@ img {
 }
 
 .contact {
-  padding: 10px 0;
   align-items: center;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 10px 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -43,7 +43,6 @@
     font-style: normal;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-right: auto;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -100,9 +99,12 @@
 
 
 .contact{
-    padding: 10px 0;
+    
     align-items: center;
     margin-left: auto;
+    @media screen and (min-width:768px) {
+        padding: 10px 0;
+    }
 
     @media screen and (min-width:1200px) {
         display: flex;
