@@ -25,8 +25,8 @@
 
 
 .modal {
-    width: 450px;
     
+    flex-basis: 450px;
     padding: 40px;
     position: absolute;
     top: 50%;
@@ -55,14 +55,23 @@
 }
 .modal-element_first {
     display: inline;
-    width: 448px;
-    height: 23px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 0.03em;
-    color: var(--primary-light-txt);
-    margin-bottom: 12px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        
+    
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: #212121;
+    // font-weight: 700;
+    // font-size: 20px;
+    // line-height: 23px;
+    // letter-spacing: 0.03em;
+    // color: var(--primary-light-txt);
+    // margin-bottom: 12px;
 
     @media (min-width:1200px) {
         font-weight: 700;
@@ -96,7 +105,7 @@
 
 }
 .modal-element_hover {
-    width: 448px;
+    
     height: 40px;
 
     &:hover,
@@ -109,9 +118,9 @@
 .modal-element_input {
     display: block;
     padding-left: 40px;
-
+    width: 100%;
     border: 0;
-    width: 370px;
+    
     height: 40px;
     font-family: inherit;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -129,7 +138,7 @@
 .modal-element_pregunta {
     display: block;
     padding: 12px 16px;
-    width: 370px;
+   
     height: 120px;
 
     &:hover,
@@ -158,7 +167,7 @@
     display: flex;
     position: absolute;
     margin: 0;
-    left: 412px;
+    right: 8px;
     top: 8px;
     width: 30px;
     height: 30px;

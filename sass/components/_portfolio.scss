@@ -139,10 +139,13 @@
 .projekts-item {
     list-style: none;
     box-sizing: border-box;
-    
-    &:not(:last-child){
-        margin-bottom: 30px;
+    @media screen and (max-width:767px) {
+        &:not(:last-child) {
+                margin-bottom: 30px;
+            }
     }
+    
+    
     
     @media (min-width:768px) {
         flex-basis: 354px;
