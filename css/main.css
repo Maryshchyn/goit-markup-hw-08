@@ -950,7 +950,7 @@ img {
 
 @media (min-width: 768px) {
   .advice_iten {
-    flex-basis: 320px;
+    flex-basis: 270px;
     margin: 15px;
     width: calc((100% - 2 * 30px) / 2);
   }
@@ -1768,9 +1768,6 @@ img {
     flex-basis: 354px;
     width: calc((100% - 2 * 15px) / 2);
     margin: 15px;
-  }
-  .projekts-item {
-    margin-bottom: 30px;
   }
 }
 
